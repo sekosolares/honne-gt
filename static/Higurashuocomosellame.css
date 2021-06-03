@@ -1,0 +1,592 @@
+
+/* Codigos generales */
+/*Scrollbar*/
+@font-face {
+  font-family: "Kashima Brush Demo";
+  src: url('Kashima\ Demo.otf');
+}
+@font-face {
+  font-family: "Lato Thin";
+  src: url('Lato-Thin.ttf');
+}
+@font-face {
+  font-family: "Penna";
+  src: url('penna.otf');
+}
+@font-face {
+  font-family: "Clip";
+  src: url('Clip.ttf');
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url('Marcellus-Regular.ttf');
+}
+@font-face {
+  font-family: "merge-light";
+  src: url('merge_light.otf');
+}
+@font-face {
+  font-family: "medio";
+  src: url('medio.otf');
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #911010;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 115, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 166, 0, 0.945);
+}
+/*Selección*/
+::selection {
+  color: #ff4800;
+  background:  rgb(0, 2, 36);
+}
+picture {
+  display: flex;
+  margin-left: auto;
+}
+/* Codigo de Barra de navegación */
+ *{
+    margin: 0;
+    padding: 0;
+  }
+ header {
+    font-size: 25px;
+    width: 100%;
+    height: 20em;
+    margin: 0 auto;
+    background: url('./img/bb.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(0, 2, 36);
+      position: sticky;
+      top: 0;
+      font-family: "Kashima Brush Demo";
+      z-index: 50;
+  }
+  ul#menu {
+    list-style: none;
+    width: 100%;
+    height: 70px;
+    background-color: inherit;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #menu li > a{
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+   width: 160px;
+   font-size: 1.2em;
+   height: auto;
+  }
+  #menu li > a:hover{
+    color: rgb(223, 0, 0);
+    background-color: #fdeec4;
+  }
+  #menu > li{
+    /* float:left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu > li:hover {
+    background-color: #fdeec4;
+  }
+
+  /* Codigo de Divs en las pantallas */
+  #Main {
+    display: none;
+    background-color: rgba(255, 255, 247, 0.801);
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+}
+
+/* Codigo de Button al inicio de la pagina principal */
+#pbBienvenido {
+    font-family: "Lato Thin";
+    font-size: 30px;
+    width: 480px;
+    margin:auto;
+    text-decoration: none;
+    padding: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 800;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: #7a000a;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+  }
+  #pbBienvenido:hover {
+    color: rgb(133, 0, 0);
+    background-color: #fff2e7;
+    filter: drop-shadow(0 0 5px rgb(248, 121, 47));
+    transform: scale(1.1);
+  }
+  #Iniciar_Experiencia {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background: url('./img/bb.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Audio_Bienvenido {
+      display: none;
+  }
+
+  /* Codigo de Estilos en el texto generales partiendo de la pagina principal */
+  #Bienvenidos {
+      font-family: "Penna";
+      text-align: center;
+      font-size: 85px;
+      /* margin-top: 2em; */
+      color: #FFF;
+  }
+  #Honne {
+    font-family: "Clip";
+    color: orangered;
+}
+#Intro {
+    font-family: "Marcellus";
+    text-align: center;
+    font-size: 23px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 200px;
+}
+
+/* Codigo de ComoLeerManga */
+#Bienvenidoss {
+    font-family: "Penna";
+      text-align: center;
+      font-size: 85px;
+      color: rgb(0, 0, 0);
+
+}
+#TitulosCLM {
+    font-family: "Lato Thin";
+      text-align: left;
+      font-size: 40px;
+      margin: 0 auto;
+      width: 1000px;
+      height: 80px;
+}
+#Contenido {
+    font-family: "Merge-light";
+    text-align: left;
+    font-size: 23px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 200px;
+}
+#img1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Codigo de Mangas y WebToons */
+#manga1 :hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgb(248, 121, 47));
+}
+#manga1 {
+  filter: drop-shadow(0 0 8px rgb(134, 0, 0));
+  padding-left: 100px;
+  padding-right: 20px;
+}/*A partir de aquí es el código de la Galería y El Overlay de texto*/
+.row {
+  display: flex;
+}
+.container1 {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  /*Esto es para la galería*/
+  flex: 33.33%;
+  padding: 5px;
+}
+.image {
+  display: block;
+}
+.overlay {
+  font-family: "Lato Thin";
+  position: absolute;
+  bottom: 0;
+  background: rgb(94, 0, 0);
+  background: rgba(129, 30, 5, 0.87);
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  width: 161px;
+  padding: 20px;
+  text-align: center;
+}
+.container1:hover .overlay {
+  opacity: 1;
+}
+.container1:hover .tag1 {
+  opacity: 1;
+}
+.container1:hover .tag2 {
+  opacity: 1;
+}
+.container1:hover .tag3 {
+  opacity: 1;
+}
+.tag1 {
+  width: 60px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  padding-left: 1px;
+  background: rgb(145, 0, 0);
+  color: #f1f1f1;
+  font-family: Marcellus;
+  font-size: 14px;
+  text-align: center;
+/*Overlay de etiqueta*/
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+}
+.tag2 {
+  width: 63px;
+  height: 25px;
+  position: absolute;
+  top: 35px;
+  padding-left: 1px;
+  background: rgb(255, 51, 0);
+  color: #f1f1f1;
+  font-family: Marcellus;
+  font-size: 14px;
+  text-align: center;
+/*Overlay de etiqueta*/
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+}
+.tag3 {
+  width: 60px;
+  height: 25px;
+  position: absolute;
+  top: 65px;
+  padding-left: 1px;
+  background: rgb(255, 166, 0);
+  color: #f1f1f1;
+  font-family: Marcellus;
+  font-size: 14px;
+  text-align: center;
+/*Overlay de etiqueta*/
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+}
+
+/*Codigo para Explorar*/
+/*Cajas de Clasificaciones*/
+#Clasificacion {
+  font-family: "Lato Thin";
+  padding: 50px;
+  text-align: center;
+}
+#Def {
+  font-family: "Merge-light";
+  padding: 50px;
+  text-align: left;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 2000px; /* Efecto 3D */
+}
+.flip-box-inner {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  background-color: #7a000a;
+  color: rgb(255, 243, 228);
+}
+.flip-box-back {
+  transform: rotateX(180deg);
+  background-color: rgb(255, 115, 0);
+  color: rgb(255, 243, 228);
+}
+/*Elementos de filtro*/
+.container {
+  overflow: hidden;
+  flex: 33.33%;
+  padding: 5px;
+}
+.filterDiv {
+  float: left;
+  background-color: rgb(0, 2, 36);
+  margin: 2px;
+  display: none; /* Oculto por default */
+}
+.show {
+  display: block;
+}
+/* estilo de botones */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(0, 2, 36);
+  cursor: pointer;
+  border-radius: 12px;
+  font-family: "Marcellus";
+  font-size: 14px;
+  color: #fdeec4;
+}
+.btn:hover {
+  background-color: #7a000a;
+}
+.btn.active {
+  background-color: #ff5e00;
+  color: white;
+}
+
+/*Codigo del Hoja de Kimetsu no Yaiba*/
+.HojaKimetsu {
+  width: 100%;
+  height: 20em;
+  margin: 0 auto;
+  background: url('./img/KimetsuBk3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Contenidou {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 90px;
+  color: #f1f1f1;
+}
+#TituloKimetsu {
+  padding-left: 150px;
+  text-align: left;
+  font-size: 50px;
+  font-family: "Penna";
+  color: #f1f1f1;
+  padding-left: 20px;
+}
+table {
+ width: 90%;
+ margin: 0 auto;
+ padding: auto;
+ position: top;
+}
+td {
+  width: 15%;
+  text-align: left;
+}
+#fondo {
+  background: #010924e3;
+}
+#ImgKimetsu {
+  justify-content:center;
+  
+}
+.Autor {
+  font-family: "Marcellus";
+  font-size: 14px;
+ 
+  color: #f1f1f1;
+  width: 165px;
+  height: 25px;
+  text-align:left;
+  padding-left: 20px;
+}
+.EstadoFin {
+  font-family: "Marcellus";
+  font-size: 14px;
+  
+  color: #f1f1f1;
+  width: 150px;
+  height: 25px;
+  text-align:left;
+  padding-left: 20px;
+}
+.Demografía {
+  font-family: "Marcellus";
+  font-size: 14px;
+  color: #f1f1f1;
+  width: 60px;
+  height: 25px;
+  text-align:left;
+  padding-top: 5px;
+  padding-left: 20px;
+  float: left;
+  padding-left: 20px;
+  padding-right: 10px;
+  background: rgb(2, 1, 82);
+}
+.Anime {
+  font-family: "Marcellus";
+  font-size: 14px;
+  color: #f1f1f1;
+  width: 150px;
+  height: 25px;
+  text-align:left;
+  padding-left: 20px;
+}
+.tag00 {
+  width: 60px;
+  height: 25px;
+  float: left;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background: rgb(255, 166, 0);
+  color: #f1f1f1;
+  font-family: Marcellus;
+  font-size: 14px;
+  text-align: left;
+}
+.tag01 {
+  display: block;
+  width: 60px;
+  height: 25px;
+  float: left;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background: #ff5e00;
+  color: #f1f1f1;
+  font-family: Marcellus;
+  font-size: 14px;
+  text-align: left;
+}
+.tag02 {
+  display: block;
+  width: 60px;
+  height: 25px;
+  float: left;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background: #7a000a;
+  color: #f1f1f1;
+  font-family: Marcellus;
+  font-size: 14px;
+  text-align: left;
+
+}
+#Parrafo {
+  font-family: "Marcellus";
+  font-size: 18px;
+  color: #ffffff;
+  width: 700px;
+  text-align:left;
+  padding-left: 20px;
+}
+/*Tabla de capitulos*/
+/*Estilo de Links */
+.Cajita {
+  padding-left: 100px;
+  padding-top: 20px;
+}
+#Titulolector {
+  font-family: "Lato Thin";
+  font-size: 40px;
+}
+.accordion {
+  font-family: "merge-light";
+  display: flex;
+  justify-content:center;
+  background-color: rgb(18, 0, 83);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 1000px;
+  height: 15px;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: rgba(255, 166, 0, 0.712);
+}
+
+
+/*Lector directo capitulo del manga*/
+.fondodo {
+  background:linear-gradient(30deg,rgba(0, 8, 53, 0.514), rgba(90, 0, 0, 0.349),rgba(255, 217, 0, 0.466), rgba(0, 8, 53, 0.514));
+}
+.row1 {
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 0 150px;
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 50%;
+  padding: 0 4px;
+}
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle; 
+}
+.Cajita2{
+  float: right;
+  padding-right: 100px;
+}
+#Botonnext {
+  font-family: "medio";
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;    color: rgb(255, 255, 255);
+  background-color: #7a000a;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+}
+#Botinnext :hover {
+  color: rgb(133, 0, 0);
+  background-color: #fff2e7;
+  filter: drop-shadow(0 0 5px rgb(248, 121, 47));
+  transform: scale(1.1);
+}

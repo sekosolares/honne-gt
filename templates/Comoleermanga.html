@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Higurashuocomosellame.css') }}">
+    <title> Cómo leer manga </title>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li> <a href="{{ url_for('home') }}">
+                <picture>
+                <img src="{{ url_for('static', filename='img/Honne.png') }}"  alt = "Logo" width="200" height="50">
+            </picture></a></li>
+            <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
+            <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
+            <li><a href="WebToons.html"> Web Toons </a></li>
+            <li><a href="Explorar.html"> Explorar </a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <h1 id="Bienvenidos">
+            Aprendamos juntos a leer manga!
+        </h1>
+    </header>
+    <br>
+    <br>
+    <p id="Intro">
+        El Manga es la palabra japonesa para designar las historietas en general.
+        Fuera de Japón, se utiliza para referirse a las historietas de origen japonés.<br>
+        Es una parte muy importante del mercado editorial de Japón y motiva múltiples adaptaciones
+        a distintos formatos: series de animación, conocidas como anime, o de imagen real, películas, videojuegos y novelas.
+        Si eres nuevo seguro tendrás dudas sobre el manga y su forma de lectura,
+        no te preocupes más.<br>
+        ¡Aquí te ayudamos!<br>
+    </p>
+    <br>
+    <br>
+    <h2 id="TitulosCLM"> ¿Cómo saber qué manga o tipo de manga leer? </h2>
+    <p id="Contenido">
+        <b>Aprende acerca de los diferentes tipos de manga.</b> Si seleccionas Explorar en nuestra barra de navegación
+        podrás encontrar filtros demográficos y de género, cada una de sus sub clasificaciones tiene su propia descripción.<br>
+        Podrías encontrar algo de tu agrado.
+    </p>
+        <picture id="img1">
+            <img src="{{ url_for('static', filename='img/gene.jpg') }}"  alt = "mangas" width="400" height="250">
+        </picture> 
+        <br>
+        <br>
+        <br>        
+    
+    <p id="Contenido">
+        <b>Aprende acerca de algunas series populares de manga.</b> Podrás entender mejor sobre tus gustos
+        con ejemplos claros de los tipos de manga populares.<br>
+        En nuestra sección de Mangas en la barra de navegación encontrarás los mangas más populares y
+        si te interesan los web comics en esa sección también encontrarás los más populares.
+    </p>
+        <picture id="img1">
+            <img src="{{ url_for('static', filename='img/popu.jpg') }}"  alt = "mangas" width="400" height="250">
+        </picture> 
+        <br>
+        <br>
+        <br>        
+    <h2 id="TitulosCLM"> ¿Cómo leer los paneles? </h2>
+    <p id="Contenido">
+        <b> Lee los paneles de derecha a izquierda y en una secuencia de arriba a abajo.</b>
+        Al igual que las páginas del manga, los paneles individuales se deben leer en una secuencia de derecha a izquierda. 
+        Comienza leyendo cada página al iniciar con el panel que se encuentra en la esquina superior de la derecha. 
+        Lee de derecha a izquierda y, cuando llegues al borde de la página, ve al panel de la derecha de la siguiente fila de paneles.
+    </p>
+    <br>
+        <picture id="img1">
+            <img src="{{ url_for('static', filename='img/Pan.jpg') }}"  alt = "orden de lectura de los paneles" width="400" height="250">
+        </picture> 
+        <br>
+        <br>
+        <br>  
+        <p id="Contenido">
+            <b>Entiende los fondos del panel negros como una escena retrospectiva.</b> 
+            Cuando el panel de un manga tiene un fondo negro, este suele indicar que los
+            eventos ilustrados en el panel sucedieron anteriormente en la historia que se presenta en el manga.
+            Además esto aplica a Web comics también.
+        </p>
+        <br>
+            <picture id="img1">
+                <img src="{{ url_for('static', filename='img/fonduu.jpg') }}"  alt = "fondo retrospectivo"width="215" height="300">
+            </picture> 
+            <br>
+            <br>
+            <br> 
+    <h2 id="TitulosCLM"> ¿Cómo leer los globos o burbujas de diálogo? </h2>
+    <p id="Contenido">
+        <b>Lee los globos de diálogo de derecha a izquierda y de arriba a abajo.</b> 
+        Los globos de diálogo que contienen el texto de la conversación entre los personajes, también se deben leer en una secuencia de derecha a izquierda. 
+        Comienza en la esquina superior de la derecha del panel individual y lee los globos de diálogo de derecha a izquierda y luego
+        de arriba a abajo.
+    </p>
+        <picture id="img1">
+            <img src="{{ url_for('static', filename='img/burbu.jpg') }}"  alt = "orden de lectura de los globos de dialogo" width="215" height="300">
+        </picture> 
+        <br>
+        <br>
+        <br>
+        <h2 id="TitulosCLM"> Entender las expresiones de los personajes. </h2>
+        <p id="Contenido">
+            <b> Entiende una burbuja de suspiro como una expresión de alivio o irritación del personaje. </b>
+                Algunas veces, los personajes del manga se dibujan con una burbuja vacía de diálogo a la altura de la boca o debajo de ella. 
+                Esto indica que suspira y se puede interpretar como un alivio o una irritación.<br>
+
+            <b> Interpreta las líneas transversales sobre la cara del personaje como un sonrojo.</b>
+                Los personajes del manga suelen representarse sonrojados con unas líneas dibujadas transversalmente la nariz y las mejillas. 
+                Interpreta estas expresiones como representaciones de que un personaje se avergüenza, se entusiasma o incluso tiene 
+                sentimientos amorosos por otro.<br>
+            
+            <b>Interpreta una gota de sudor como vergüenza. </b> 
+                Algunas veces, una gota de sudor podría aparecer cerca de la cabeza de un personaje. 
+                Esto suele indicar que siente vergüenza o mucha incomodidad en una situación. 
+                Normalmente, esto es menos grave que la vergüenza que se representa al ruborizarse.<br>
+
+            <b> Entiende las sombras faciales y las auras oscuras como ira, irritabilidad o depresión.</b>
+                Cuando un personaje de manga aparece en un panel con una mancha morada, gris o negra o una sombra 
+                flotando en el fondo, suele ser un indicador de la energía negativa que lo rodea.<br>
+            
+            
+            <b>Percibe a la hemorragia nasal como lujuria, no una lesión.</b>
+                Cuando el personaje de un manga aparece en una página con una hemorragia nasal, 
+                suele significar que tiene pensamientos lujuriosos acerca de otro o que mira lujuriosamente a otro,
+                normalmente una mujer hermosa.
+        </p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <picture id="img1">
+                <img src="{{ url_for('static', filename='img/expre.jpg') }}"  alt = "orden de lectura de los globos de dialogo" width="320" height="300">
+                <img src="{{ url_for('static', filename='img/expree.jpg') }}"  alt = "orden de lectura de los globos de dialogo" width="300" height="300">
+                <img src="{{ url_for('static', filename='img/sangra.jpg') }}"  alt = "orden de lectura de los globos de dialogo" width="215" height="300">
+            </picture> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>    
+
+</body>
+</html>

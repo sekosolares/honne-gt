@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Higurashuocomosellame.css">
+    <title>Explorar</title>
+</head>
+<body>
+        <nav>
+            <ul id="menu">
+                <li> <a href="Honne.html"> 
+                    <picture>
+                    <img src="Honne.png"  alt = "Logo" width="200" height="50">
+                </picture></a></li>
+                <li><a href="Comoleermanga.html"> ¿Como leer manga? </a></li>
+                <li><a href="Mangas.html"> Mangas </a></li>
+                <li><a href="WebToons.html"> Web Toons </a></li>
+                <li><a href="Explorar.html"> Explorar </a></li>
+            </ul>
+        </nav>
+        <header> 
+            <br>
+            <br>
+            <h1 id="Bienvenidos">
+                Aqui puedes explorar por filtros y conocer sobre cada clasificacion!
+            </h1>
+        </header>
+        <br>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Mostrar todos </button>
+            <button class="btn" onclick="filterSelection('cars')"> Géneros </button>
+            <button class="btn" onclick="filterSelection('animals')"> Demografías </button>
+          </div>
+          <a href = "Aventura.html">
+          <div class="container">
+                <div class="filterDiv cars">
+                    <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 id="Clasificacion"> Aventura </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p id="Def"> Género en donde el personaje principal tiene un objetivo, una razón de ser, una meta, un sueño. </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+            <a href = "Accion.html">
+                <div class="filterDiv cars">
+                    <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 id="Clasificacion"> Acción </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p id="Def"> Suele girar en torno a un protagonista y sus amigos, que van superando obstáculos mientras crecen.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+                <a href = "Jidaimono.html">
+                <div class="filterDiv cars">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2 id="Clasificacion"> Jidaimono </h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <p id="Def"> Que está ambientado en el Japón feudal.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+                <div class="filterDiv cars">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2 id="Clasificacion"> Yaoi </h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <p id="Def"> historia de amor entre chicos.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterDiv cars"> 
+                    <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 id="Clasificacion"> Recuentos de la vida </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p id="Def"> Género que a menudo se asemeja al melodrama adolescente, representa las experiencias cotidianas.</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="filterDiv animals"> 
+                    <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 id="Clasificacion"> Josei </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p id="Def"> Clasificación dirigida a mujeres jóvenes y adultas.</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <a href = "Shonen.html">
+                <div class="filterDiv animals"> 
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2 id="Clasificacion"> Shōnen </h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <p id="Def"> Clasificación dirigida a chicos adolescentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <div class="filterDiv animals"> 
+                    <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 id="Clasificacion"> Shōjo  </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p id="Def"> Dirigida especialmente al público femenino adolescente, en su mayoría protagonizado por una chica.</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+    <script>
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+        }
+
+        filterSelection("all");
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+</html>

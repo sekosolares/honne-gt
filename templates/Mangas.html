@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Higurashuocomosellame.css') }}">
+    <title> Mangas </title>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li> <a href="{{ url_for('home') }}">
+                <picture>
+                <img src="{{ url_for('static', filename='img/Honne.png') }}"  alt = "Logo" width="200" height="50">
+            </picture></a></li>
+            <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
+            <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
+            <li><a href="WebToons.html"> Web Toons </a></li>
+            <li><a href="Explorar.html"> Explorar </a></li>
+        </ul>
+    </nav>
+        <header>
+            <br>
+            <br>
+            <h1 id="Bienvenidos">
+                Aqui encontraras los mangas mas populares!
+            </h1>
+        </header>
+        <br>
+            <div class="row">
+                <div class="container1">
+                <a href="KimetsuNoYaiba.html">    
+                <picture id="manga1">
+                  <img src="{{ url_for('static', filename='img/Kimetsu.png') }}" alt="Portada del manga Kimetsu no Yaiba" width="200" height="300" class="image">
+                  <div class="overlay"> Kimetsu no Yaiba </div>
+                      <div class="tag1"><p> Shōnen </p></div>
+                      <div class="tag2"><p> Jidaimono </p></div>
+                </picture></a>
+                </div>
+                <div class="container1">
+                    <a href="">
+                    <picture id="manga1">
+                      <img src="{{ url_for('static', filename='img/Shingeki.png') }}" alt="Portada del manga Shingeki no Kyojin" width="200" height="300" class="image">
+                      <div class="overlay"> Shingeki no Kyojin </div>
+                      <div class="tag1"><p> Shōnen </p></div>
+                      <div class="tag2"><p> Acción </p></div>
+                    </picture></a>
+                    </div>
+                    <div class="container1">
+                     <a href="">    
+                    <picture id="manga1">
+                        <img src="{{ url_for('static', filename='img/Wotakoi.jpg') }}" alt="Portada del manga Wotakoi" width="200" height="300" class="image">
+                        <div class="overlay"> Wotaku ni koi wa muzukashii </div>
+                        <div class="tag1"><p> Josei </p></div>
+                        <div class="tag2"><p> Comedia </p></div>
+                    </picture></a>
+                    </div>
+              </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    
+</body>
+</html>

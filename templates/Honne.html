@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Higurashuocomosellame.css') }}">
+    <title> Proyecto </title>
+</head>
+<body>
+    <div id="Iniciar_Experiencia">
+        <button id="pbBienvenido" onclick="bienvenido()"> Reproduce tu Bienvenida para continuar. (๑•̀ㅂ•́)و✧ </button>
+    </div>
+    <div id="Main">
+        <nav>
+            <ul id="menu">
+                <li> <a href="{{ url_for('home') }}">
+                    <picture>
+                    <img src="{{ url_for('static', filename='img/Honne.png') }}"  alt = "Logo" width="200" height="50">
+                </picture></a></li>
+                <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
+                <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
+                <li><a href="WebToons.html"> Web Toons </a></li>
+                <li><a href="Explorar.html"> Explorar </a></li>
+            </ul>
+        </nav>
+        <header>
+            <br>
+            <h1 id="Bienvenidos">
+                Bienvenidx a <div id= "Honne">Honne </div> tu lector de manga online!
+            </h1>
+        </header>
+        <br>
+        <br>
+        <p id="Intro">
+            En la barra de navegación podrás encontrar diferentes elementos que te ayudaran a encontrar lo que buscas.
+            Aprenderas a leer manga, puedes navegar entre los mangas y Web comics más populares. <br>
+            Explorar según filtros principales y filtros más específicos como géneros y demografías.<br>
+            ¡Esperamos que sea de tu agrado y puedas tener una gran experiencia cada vez!
+        </p>
+    </div>
+
+
+    <audio controls id="Audio_Bienvenido">
+        <source src="{{ url_for('static', filename='sound/Bienvenido.mp3') }}" type="audio/mpeg">
+        El buscador no tiene soportito para audio.
+    </audio>
+
+    <script>
+        // Si queres la pasas a un archivo.js que tenga scripts utiles.
+        function get(str) {
+            return document.querySelector(str);
+        }
+
+        function bienvenido() {
+            get("#Iniciar_Experiencia").style.display = 'none';
+            get("#Main").style.display = 'block';
+
+            window.setTimeout(
+                () => {
+                    get("#Audio_Bienvenido").play();
+                },
+                200
+            );
+        }
+    </script>
+</body>
+</html>
