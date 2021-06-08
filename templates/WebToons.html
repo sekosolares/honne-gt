@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Higurashuocomosellame.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Higurashuocomosellame.css') }}">
     <title> WebToons </title>
 </head>
 <body>
-    
-        <nav>
-            <ul id="menu">
-                <li> <a href="Honne.html"> 
-                    <picture>
-                    <img src="Honne.png"  alt = "Logo" width="200" height="50">
-                </picture></a></li>
-                <li><a href="Comoleermanga.html"> ¿Como leer manga? </a></li>
-                <li><a href="Mangas.html"> Mangas </a></li>
-                <li><a href="WebToons.html"> Web Toons </a></li>
-                <li><a href="Explorar.html"> Explorar </a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul id="menu">
+            <li> <a href="{{ url_for('home') }}">
+                <picture>
+                <img src="{{ url_for('static', filename='img/Honne.png') }}"  alt = "Logo" width="200" height="50">
+            </picture></a></li>
+            <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
+            <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
+            <li><a href="{{ url_for('webtoons') }}"> Web Toons </a></li>
+            <li><a href="{{ url_for('explorar') }}"> Explorar </a></li>
+        </ul>
+    </nav>
         <header>
             <br>
             <br>
@@ -31,9 +30,9 @@
         <br>
             <div class="row">
                 <div class="container1">
-                <a href="Explorar.html">    
+                <a href="{{ url_for('explorar') }}">    
                 <picture id="manga1">
-                  <img src="Cheese.jpg" alt="Portada del manhwa Cheese in the Trap" width="200" height="300" class="image">
+                  <img src="{{ url_for('static', filename='img/Cheese.jpg') }}" alt="Portada del manhwa Cheese in the Trap" width="200" height="300" class="image">
                   <div class="overlay"> Cheese in the Trap </div>
                   <div class="tag1"><p> Manwha </p></div>
                   <div class="tag2"><p> Josei </p></div>
@@ -43,7 +42,7 @@
                 <div class="container1">
                     <a href="">    
                     <picture id="manga1">
-                      <img src="Noblesse.jpg" alt="Portada del manhwa Noblesse" width="200" height="300" class="image">
+                      <img src="{{ url_for('static', filename='img/Noblesse.jpg') }}" alt="Portada del manhwa Noblesse" width="200" height="300" class="image">
                       <div class="overlay"> Noblesse </div>
                       <div class="tag1"><p> Manwha </p></div>
                       <div class="tag2"><p> Shōnen </p></div>
@@ -53,7 +52,7 @@
                     <div class="container1">
                      <a href="">    
                     <picture id="manga1">
-                        <img src="Hualongji.jpg" alt="Portada del manhua Hualongji" width="200" height="300" class="image">
+                        <img src="{{ url_for('static', filename='img/Hualongji.jpg') }}" alt="Portada del manhua Hualongji" width="200" height="300" class="image">
                         <div class="overlay"> Hualongji </div>
                         <div class="tag1"><p> Manhua </p></div>
                         <div class="tag2"><p> Shōjo </p></div>

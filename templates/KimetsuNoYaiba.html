@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Higurashuocomosellame.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='Higurashuocomosellame.css') }}">
         <title> Kimetsu no Yaiba </title>
     </head>
     <body>
         <nav>
             <ul id="menu">
-                <li> <a href="Honne.html"> 
+                <li> <a href="{{ url_for('home') }}">
                     <picture>
-                    <img src="Honne.png"  alt = "Logo" width="200" height="50">
+                    <img src="{{ url_for('static', filename='img/Honne.png') }}"  alt = "Logo" width="200" height="50">
                 </picture></a></li>
-                <li><a href="Comoleermanga.html"> ¿Como leer manga? </a></li>
-                <li><a href="Mangas.html"> Mangas </a></li>
-                <li><a href="WebToons.html"> Web Toons </a></li>
-                <li><a href="Explorar.html"> Explorar </a></li>
+                <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
+                <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
+                <li><a href="{{ url_for('webtoons') }}"> Web Toons </a></li>
+                <li><a href="{{ url_for('explorar') }}"> Explorar </a></li>
             </ul>
         </nav>
 
@@ -28,7 +28,7 @@
                     <td>
                         
                         <picture id="ImgKimetsu">
-                            <img src="Kimetsu.png" alt="Portada del manga Kimetsu no Yaiba" width="200" height="300" class="image">
+                            <img src="{{ url_for('static', filename='img/Kimetsu.png') }}" alt="Portada del manga Kimetsu no Yaiba" width="200" height="300" class="image">
                         </picture>
                     </td>
                     <td id= fondo>
@@ -38,10 +38,10 @@
                         <b><div class="Autor"><p> Autor: Koyoharu Gotōge </p></div>
                         <div class="EstadoFin"><p> Estado: Finalizado. </p></div>
                         <div class="Anime"><p> Puedes ver el anime. </p></div></b>
-                        <a href = "Shonen.html"><div class="Demografía"><p>Shōnen</p></div></a>
-                        <a href = "Jidaimono.html"><div class="tag00"><p>Jidaimono</p></div></a>
-                        <a href = "Aventura.html"><div class="tag01"><p> Aventura</p></div></a>
-                        <a href = "Accion.html"><div class="tag02"><p>Acción </p></div></a>
+                        <a href = "{{ url_for('go_to', template_name='Shonen') }}"><div class="Demografía"><p>Shōnen</p></div></a>
+                        <a href = "{{ url_for('go_to', template_name='Jidaimono') }}"><div class="tag00"><p>Jidaimono</p></div></a>
+                        <a href = "{{ url_for('go_to', template_name='Aventura') }}"><div class="tag01"><p> Aventura</p></div></a>
+                        <a href = "{{ url_for('go_to', template_name='Accion') }}"><div class="tag02"><p>Acción </p></div></a>
                         <br>
                         <p id="Parrafo">
                             Tanjirou es el hijo mayor en una familia que perdió a su padre. Un día, va de visita a otro pueblo para vender carbón, y termina quedándose a pasar la noche en la casa de un lugareño, ya que abunda el rumor de un demonio que ronda por las montañas por la noche. Cuando vuelve a casa al siguiente día, una tragedia lo estaba esperando.                        </p>
@@ -57,7 +57,7 @@
         <h2 id="Titulolector"> Cápitulos (3) </h2><br>
         <a href="" class="accordion"> Cápitulo 3</a>
         <a href="" class="accordion"> Cápitulo 2</a>
-        <a href="Cap1.html" class="accordion"> Cápitulo 1</a>
+        <a href="{{ url_for('go_to', template_name='Cap1') }}" class="accordion"> Cápitulo 1</a>
     </div>
         <br>
         <br>

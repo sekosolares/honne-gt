@@ -4,36 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Higurashuocomosellame.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='Higurashuocomosellame.css') }}">
         <title> Kimetsu no Yaiba </title>
     </head>
     <body>
         <nav>
             <ul id="menu">
-                <li> <a href="Honne.html"> 
+                <li> <a href="{{ url_for('home') }}">
                     <picture>
-                    <img src="Honne.png"  alt = "Logo" width="200" height="50">
+                    <img src="{{ url_for('static', filename='img/Honne.png') }}"  alt = "Logo" width="200" height="50">
                 </picture></a></li>
-                <li><a href="Comoleermanga.html"> ¿Como leer manga? </a></li>
-                <li><a href="Mangas.html"> Mangas </a></li>
-                <li><a href="WebToons.html"> Web Toons </a></li>
-                <li><a href="Explorar.html"> Explorar </a></li>
+                <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
+                <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
+                <li><a href="{{ url_for('webtoons') }}"> Web Toons </a></li>
+                <li><a href="{{ url_for('explorar') }}"> Explorar </a></li>
             </ul>
         </nav>
     <div class="fondodo">
     <div class="row1">
         <div class="column1">
-          <img src="KimetsuCap1.jpg">
-          <img src="KimetsuCap1.2">
-          <img src="KimetsuCap1.3.jpg">
-          <img src="KimetsuCap1.4.jpg">
+          <img src="{{ url_for('static', filename='img/KimetsuCap1.jpg') }}">
+          <img src="{{ url_for('static', filename='img/KimetsuCap1.2') }}">
+          <img src="{{ url_for('static', filename='img/KimetsuCap1.3.jpg') }}">
+          <img src="{{ url_for('static', filename='img/KimetsuCap1.4.jpg') }}">
         </div>
       </div>
       <br>
       <br>
       <br>
       <div class="Cajita2">
-       <a href="KimetsuNoYaiba.html">   
+       <a href="{{ url_for('go_to', template_name='KimetsuNoYaiba') }}">   
       <button id="Botonnext"><b> <P>Regresar a la hoja del manga </P></b></button>
       </a>
       <button id="Botonnext"><b> <P>Siguiente</P></b></button>

@@ -16,8 +16,8 @@
             </picture></a></li>
             <li><a href="{{ url_for('como_leer_manga') }}"> ¿Como leer manga? </a></li>
             <li><a href="{{ url_for('mangas') }}"> Mangas </a></li>
-            <li><a href="WebToons.html"> Web Toons </a></li>
-            <li><a href="Explorar.html"> Explorar </a></li>
+            <li><a href="{{ url_for('webtoons') }}"> Web Toons </a></li>
+            <li><a href="{{ url_for('explorar') }}"> Explorar </a></li>
         </ul>
     </nav>
         <header>
@@ -30,7 +30,7 @@
         <br>
             <div class="row">
                 <div class="container1">
-                <a href="KimetsuNoYaiba.html">    
+                <a href="{{ url_for('go_to', template_name='KimetsuNoYaiba') }}">
                 <picture id="manga1">
                   <img src="{{ url_for('static', filename='img/Kimetsu.png') }}" alt="Portada del manga Kimetsu no Yaiba" width="200" height="300" class="image">
                   <div class="overlay"> Kimetsu no Yaiba </div>
