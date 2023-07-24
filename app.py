@@ -33,8 +33,6 @@ def go_to(template_name):
         return render_template('Shonen.html')
     elif template_name == 'Jidaimono':
         return render_template('Jidaimono.html')
-    elif template_name == 'Aventura':
-        return render_template('Aventura.html')
     elif template_name == 'Accion':
         return render_template('Accion.html')
     elif template_name == 'Cap1':
